@@ -1,0 +1,298 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar placeholder */
+/* ================= NAVBAR ================= */
+.hero {
+    background: url('images/adminmain.jpg') center/cover no-repeat;
+    min-height: 70vh;
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Navbar brand spacing */
+.navbar-brand {
+    font-size: 1.5rem;   /* make brand bigger */
+    margin-right: 3rem;  /* space between brand and menu */
+}
+
+/* Navbar items inline with spacing */
+.navbar-nav {
+    display: flex;
+    gap: 1.5rem;  /* even spacing between items */
+}
+
+/* Navbar links styling */
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 0;  /* adjust vertical padding */
+    transition: color 0.3s;
+}
+
+.navbar .nav-link.active {
+    color: #FFD700 !important;  /* Highlight current page in yellow */
+}
+
+.navbar .nav-link:hover {
+    color: #FFD700 !important;  /* gold hover */
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown-menu {
+    background: rgba(0,0,0,0.85);
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.navbar .dropdown-item {
+    color: white;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.navbar .dropdown-item:hover {
+    background: #333;
+    color: #FFD700;
+}
+
+
+/* Hero Content */
+.hero .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: right;
+    padding-left: 400px;
+} 
+
+/* Container */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Dashboard Cards Container */
+/* ================= DASHBOARD CARDS CENTER & COLORS ================= */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    /* centers cards horizontally */
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f0f4f8;
+    /* professional light color */
+    border-radius: 15px;
+    padding: 35px 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 280px;
+    text-align: center;
+}
+
+.card h6 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card h2 {
+    font-size: 5rem;
+    /* bigger font for more epic numbers */
+    font-weight: 800;
+    color: #1f2937;
+}
+
+
+/* Professional Card Colors */
+.card.card-primary {
+    background: #4f86f7;
+    color: #fff;
+}
+
+.card.card-primary h2 {
+    color: #fff;
+}
+
+.card.card-success {
+    background: #bae4c4;
+    color: #f7f0f0;
+}
+
+.card.card-success h2 {
+    color: #e2d7d7;
+}
+
+.card.card-warning {
+    background: #ece2c7;
+    color: #fff;
+}
+
+.card.card-warning h2 {
+    color: #fff;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+    border: none;
+    height: 42px;
+}
+
+.btn-primary {
+    background: #203150;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #4978d0;
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background: #da3535;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: #e77065;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background: #ef4444;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+.btn-outline-primary {
+    background: #15223e;
+    border: 1px solid #141e34;
+    color: #ffffff;
+    
+}
+
+.btn-outline-primary:hover {
+    border: 1px solid #141e34;
+    color: #12213a;
+    background: transparent;
+    transform: scale(1.05);
+}
+
+.btn-outline-danger {
+    border: 1px solid #e51717;
+    background: #ef4444;
+    color: #fff;
+}
+.btn-outline-danger:hover {
+     border: 1px solid #e51717;
+    color: #e51717;
+    background: transparent;
+    transform: scale(1.05);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+}
+
+table thead {
+    background: #1b2a49;
+    color: #fff;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Forms */
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin-bottom: 30px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #4f86f7;
+    box-shadow: 0 0 0 3px rgba(79, 134, 247, 0.2);
+}
+.custom-green {
+  background-color: #dde1e7; /* or any hex/rgb */
+  color: #fff !important; /* make text white */
+}
+
+.custom-yellow {
+  background-color: #dde1e7;
+  color: #ffffff !important;
+}

@@ -1,0 +1,70 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    height: 65vh;
+    background-color: rgb(30, 40, 74);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Booking Form (floating over hero) */
+.booking-card {
+    max-width: 1000px;
+    margin-top: -80px;
+    /* same as before, floats over hero */
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+    /* form on top of hero image */
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: rgb(30, 40, 74);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(76, 106, 204);
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 0.9rem;
+}
