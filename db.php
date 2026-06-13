@@ -1,19 +1,13 @@
 <?php
-// db.php - Database connection for CeylonPanorama
+$servername = getenv('MYSQLHOST');
+$username   = getenv('MYSQLUSER');
+$password   = getenv('MYSQLPASSWORD');
+$dbname     = getenv('MYSQLDATABASE');
+$port       = getenv('MYSQLPORT');
 
-// Database credentials
-$servername = "monorail.proxy.rlwy.net";           // XAMPP default
-$username = "root";                  // XAMPP default
-$password = "";                      // XAMPP default (blank in XAMPP)
-$dbname = "HdRJWVXalQXxsqkUlkmDiOpOQGTBZpSg";         // Your database name (all lowercase)
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-// Uncomment the next line to test connection
-// echo "Connected to database successfully!";
 ?>
