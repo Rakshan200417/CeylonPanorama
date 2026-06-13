@@ -2,10 +2,10 @@
 // db.php - Database connection for CeylonPanorama
 
 // Database credentials
-$servername = "localhost";           // XAMPP default
+$servername = "monorail.proxy.rlwy.net";           // XAMPP default
 $username = "root";                  // XAMPP default
 $password = "";                      // XAMPP default (blank in XAMPP)
-$dbname = "ceylon_panaroma";         // Your database name (all lowercase)
+$dbname = "HdRJWVXalQXxsqkUlkmDiOpOQGTBZpSg";         // Your database name (all lowercase)
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
