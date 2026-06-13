@@ -1,0 +1,90 @@
+/* Main content wrapper */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+/* Left content */
+.left-content {
+    flex: 1 1 55%;   /* Takes ~55% width */
+    min-width: 300px;
+}
+
+/* Highlighted text */
+.left-content .highlight {
+    color: #3b82f6;  /* Blue highlight */
+    font-weight: bold;
+}
+
+/* Buttons in left content */
+.left-content .btn-outline-light {
+    border-radius: 50px;
+    padding: 0.6rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.left-content .btn-outline-light:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Sign up form */
+.login-form {
+    flex: 1 1 40%;    /* Takes ~40% width */
+    min-width: 300px;
+    max-width: 400px;
+    
+}
+
+/* Form labels and spacing */
+.login-form .form-label {
+    font-weight: 500;
+}
+
+.login-form .form-control {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.login-form .form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+    background: rgba(255,255,255,0.1);
+}
+
+/* Password toggle */
+.login-form span {
+    font-size: 1.2rem;
+}
+
+/* Social buttons */
+.login-form .btn-outline-light {
+    border-radius: 50px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-content,
+    .login-form {
+        flex: 1 1 100%;
+        max-width: 500px;
+    }
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .d-flex.gap-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
