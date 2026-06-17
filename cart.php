@@ -166,6 +166,7 @@ $stmt_items->close();
                 margin-top: 10px;
             }
         }
+        <link rel="stylesheet" href="css/responsive.css">
     </style>
 </head>
 
