@@ -166,8 +166,8 @@ $stmt_items->close();
                 margin-top: 10px;
             }
         }
-        <link rel="stylesheet" href="css/responsive.css">
     </style>
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -184,7 +184,7 @@ $stmt_items->close();
                     <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown">Themes</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Themes</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item active" href="nature.php">Nature</a>
                 <a class="dropdown-item" href="adventure.php">Adventure</a>
