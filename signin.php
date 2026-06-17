@@ -54,6 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <title>Sign In | Ceylon Panorama</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="css/responsive.css">
 <script>
 function toggleForm(type) {
     if(type === 'user'){
