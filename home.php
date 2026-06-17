@@ -2,6 +2,7 @@
 // Start session to handle user login/cart in future
 session_start();
 include 'db.php';
+include 'footer.php';
 
 ?>
 <!DOCTYPE html>
