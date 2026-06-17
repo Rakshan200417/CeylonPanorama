@@ -50,8 +50,8 @@ if($stmt_check->num_rows > 0){
     $stmt_check->bind_result($cart_item_id, $quantity);
     $stmt_check->fetch();
     $quantity++;
-    $stmt_update = $conn->prepare("UPDATE cart_items SET quantity=?, added_at=NOW() WHERE cart_id=?");
-    $stmt_update->bind_param("ii", $quantity, $cart_item_id);
+    $stmt_update = $conn->prepare("UPDATE cart_items SET quantity=?, added_at=NOW() WHERE cart_item_id=?");
+$stmt_update->bind_param("ii", $quantity, $cart_item_id);
     $stmt_update->execute();
     $stmt_update->close();
 } else {
