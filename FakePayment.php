@@ -11,6 +11,7 @@ $total = isset($_GET['total']) ? floatval($_GET['total']) : 0;
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/responsive.css">
     <meta charset="UTF-8">
     <title>Secure Payment Gateway | Ceylon Panorama</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
