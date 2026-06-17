@@ -7,6 +7,7 @@ include 'db.php';
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="css/responsive.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ceylon Panorama Gallery</title>
