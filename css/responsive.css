@@ -115,3 +115,203 @@
     font-size: 0.8rem;
   }
 }
+
+
+/* ===================================================================
+   SHARED HERO FIX
+   Several pages (admin, gallery, nature, culture, adventure, product,
+   service, home) reuse the same ".hero .container" pattern with large
+   fixed left/right padding to shift the text. That padding is what
+   pushes the text off-screen on small devices, so we neutralise it
+   here once for every page that uses this class combination.
+   =================================================================== */
+@media (max-width: 991px) {
+  .hero .container {
+    align-items: center !important;
+    text-align: center !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 90px !important;
+  }
+
+  .hero .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero .container p,
+  .hero .container .lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 50vh;
+  }
+
+  .hero .container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* ===================================================================
+   THEME PAGES: nature.php, culture.php, adventure.php, product(s).php
+   Shared classes: .top-banner, .banner-overlay, .packages-container,
+   .package-card
+   =================================================================== */
+@media (max-width: 991px) {
+  .top-banner {
+    height: 280px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 32px;
+  }
+
+  .banner-overlay p {
+    font-size: 16px;
+  }
+
+  .package-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-banner {
+    height: 220px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 26px;
+  }
+
+  .category-section h2 {
+    font-size: 28px;
+  }
+
+  .packages-container {
+    gap: 16px;
+  }
+
+  .package-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-overlay h1 {
+    font-size: 22px;
+  }
+
+  .banner-overlay p {
+    font-size: 14px;
+  }
+
+  .category-section h2 {
+    font-size: 22px;
+  }
+}
+
+
+/* ===================================================================
+   GALLERY PAGE
+   =================================================================== */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ===================================================================
+   SERVICE PAGE (.card heights reused for hotels/medicare/transport/
+   tour guide sections)
+   =================================================================== */
+@media (max-width: 767px) {
+  #services .card img,
+  .service .card img {
+    height: 160px;
+  }
+}
+
+
+/* ===================================================================
+   ADMIN DASHBOARD
+   =================================================================== */
+@media (max-width: 991px) {
+  .dashboard-cards {
+    gap: 16px;
+  }
+
+  .dashboard-cards .card {
+    min-width: 220px;
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-cards .card {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+
+/* ===================================================================
+   CART PAGE
+   =================================================================== */
+@media (max-width: 767px) {
+  .cart-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cart-card img {
+    max-width: 80px;
+  }
+}
+
+
+/* ===================================================================
+   SIGN IN / SIGN UP PAGES
+   =================================================================== */
+@media (max-width: 767px) {
+  .search-box input {
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #adminsignup .container,
+  .auth-card {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 90% !important;
+  }
+}
+
+
+/* ===================================================================
+   GLOBAL SAFETY NET
+   Prevents any leftover fixed-width element (forgotten in a page-
+   specific file) from forcing horizontal scroll on small screens.
+   =================================================================== */
+@media (max-width: 480px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
