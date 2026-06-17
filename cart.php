@@ -184,12 +184,12 @@ $stmt_items->close();
                     <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Themes</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="nature.php">Nature</a></li>
-                            <li><a class="dropdown-item" href="adventure.php">Adventure</a></li>
-                            <li><a class="dropdown-item" href="culture.php">Culture</a></li>
-                        </ul>
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown">Themes</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item active" href="nature.php">Nature</a>
+                <a class="dropdown-item" href="adventure.php">Adventure</a>
+                <a class="dropdown-item" href="culture.php">Culture</a>
+              </div>
                     </li>
 
                     <li class="nav-item dropdown">
