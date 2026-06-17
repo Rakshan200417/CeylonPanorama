@@ -1,0 +1,117 @@
+/* ==========================================================================
+   responsive.css
+   Global responsive fixes for Ceylon Panorama.
+   Load this file LAST, after every other <link> tag, on every page.
+   It overrides fixed-width / fixed-height rules from the page-specific
+   CSS files so the layout adapts to tablet and mobile screens.
+
+   Breakpoints match Bootstrap 4's own grid breakpoints:
+     <= 991px  -> tablets / small laptops
+     <= 767px  -> tablets portrait / large phones
+     <= 575px  -> phones
+   ========================================================================== */
+
+
+/* ============================ HOME PAGE ================================ */
+
+/* ---- Tablets (<= 991px) ---- */
+@media (max-width: 991px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero .container {
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 90px; /* clears the fixed navbar */
+  }
+
+  #promoCarousel img {
+    height: 280px;
+  }
+
+  #themes-section .card img,
+  #services .card img {
+    height: 180px;
+  }
+}
+
+/* ---- Phones (<= 767px) ---- */
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+
+  .navbar-nav {
+    gap: 0.25rem; /* tighten spacing in the collapsed mobile menu */
+  }
+
+  .hero {
+    min-height: 55vh;
+  }
+
+  .hero .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero .container .lead {
+    font-size: 1rem;
+  }
+
+  #promoCarousel img {
+    height: 200px;
+  }
+
+  #themes-section h2,
+  #services h2 {
+    font-size: 1.5rem;
+  }
+
+  #themes-section .row,
+  #services .row {
+    gap: 16px;
+  }
+
+  #themes-section .card img,
+  #services .card img {
+    height: 160px;
+  }
+
+  .why-choose-us .col-md-6.offset-md-3 {
+    margin: 0;
+  }
+
+  .why-choose-us .col-4 {
+    padding: 0 4px;
+  }
+
+  .why-choose-us h3.display-6 {
+    font-size: 1.5rem;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+}
+
+/* ---- Small phones (<= 480px) ---- */
+@media (max-width: 480px) {
+  .hero .container h1 {
+    font-size: 1.5rem;
+  }
+
+  #promoCarousel img {
+    height: 160px;
+  }
+
+  .why-choose-us h3.display-6 {
+    font-size: 1.2rem;
+  }
+
+  .why-choose-us p.text-muted {
+    font-size: 0.8rem;
+  }
+}
